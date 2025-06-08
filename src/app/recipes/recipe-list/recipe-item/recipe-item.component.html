@@ -1,4 +1,8 @@
-<a href="#" class="list-group-item clearfix" (click)="onSelected()" style="display: flex; align-items: stretch;">
+<a 
+  class="list-group-item clearfix"
+  style="display: flex; align-items: stretch; cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active">
   
   <div style="flex: 1;">
     <h5 class="list-group-item-heading">{{ recipe?.name }}</h5>
